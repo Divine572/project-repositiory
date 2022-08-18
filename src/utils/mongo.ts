@@ -1,15 +1,15 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
+import config from 'config';
 
-const dbUri = config.get<string>('dbUri')
+const dbUri = config.get<string>('dbUri');
 
-export default const connectDB = async () => {
-    try{
-        await mongoose.connect(dbUri)
-        console.log('MONGODB database connected successfully....')
-    } catch(err) {
-        console.log('MONGODB database could not connect....')
-        console.error(error)
-        process.exit(1)
-
-    }
+export default async function connectDB() {
+  try {
+    await mongoose.connect(dbUri);
+    console.log('MONGODB database connected successfully....');
+  } catch (error) {
+    console.log('MONGODB database could not connect....');
+    console.error(error);
+    process.exit(1);
+  }
 }
