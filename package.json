@@ -1,0 +1,42 @@
+{
+  "name": "project-repositiory",
+  "version": "1.0.0",
+  "description": "This project is a tutorial guide on how to build GRAPHQL APIs in Nodejs using typescript, typegoose, and typegrphql",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divine572/project-repositiory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Divine572/project-repositiory/issues"
+  },
+  "homepage": "https://github.com/Divine572/project-repositiory#readme",
+  "dependencies": {
+    "@typegoose/typegoose": "^9.11.0",
+    "apollo-server": "^3.10.1",
+    "bcrypt": "^5.0.1",
+    "class-validator": "^0.13.2",
+    "config": "^3.3.7",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "graphql": "^15.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2",
+    "nanoid": "^3.3.3",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/config": "^3.3.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/jsonwebtoken": "^8.5.8",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
