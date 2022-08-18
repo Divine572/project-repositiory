@@ -11,6 +11,7 @@ import {
 import cookieParser from 'cookie-parser';
 
 import { resolvers } from './resolvers';
+import connectDB from './utils/mongo';
 
 async function bootstrap() {
   // build schema
@@ -46,6 +47,7 @@ async function bootstrap() {
   });
 
   // connect to DATABASE
+  connectDB();
 }
 
 bootstrap();
